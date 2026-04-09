@@ -1,6 +1,3 @@
-Certainly! Here is the complete guide formatted in a professional **Markdown (`.md`)** structure. You can copy this into a file named `README.md` or `GUIDE.md` to share on GitHub or other community platforms.
-
-***
 
 # 🦥 Mastering Unsloth & Causal-Conv1d on Windows
 
