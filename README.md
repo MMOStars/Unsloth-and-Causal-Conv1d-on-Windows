@@ -100,13 +100,3 @@ If you experience `CUDA Out of Memory` (OOM) errors:
 2.  **Lower LoRA Rank (R):** Set to `16` or `8`.
 3.  **Enable 4-bit Quantization:** Always ensure `load_in_4bit=True` is active.
 
----
-
-## 🛠 Troubleshooting Summary
-
-| Error | Fix |
-| :--- | :--- |
-| `ModuleNotFoundError: No module named 'torch'` | Building with isolation. Use `pip install . --no-build-isolation`. |
-| `Unsupported gpu architecture 'compute_53'` | CUDA 13 incompatibility. Prune the arch list in `setup.py` to only `86`. |
-| `IndentationError` in `setup.py` | Python is space-sensitive. Ensure your `cc_flag` edits match the surrounding code's 8-space indent. |
-| `DISTUTILS_USE_SDK` not set | You are using a Native Tools prompt but didn't set the flag: `set DISTUTILS_USE_SDK=1`. |
